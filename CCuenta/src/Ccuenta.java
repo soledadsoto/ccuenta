@@ -12,7 +12,7 @@ public class Ccuenta {
 
 	    public Ccuenta (String nom, String cue, double sal, double tipo)
 	    {
-	        nombre =nom;
+	        setNombre(nom);
 	        cuenta=cue;
 	        saldo=sal;
 	    }
@@ -47,4 +47,20 @@ public class Ccuenta {
 	    {
 	        return cuenta;
 	    }
+
+		public String getNombre() {
+			return nombre;
+		}
+
+		public void setNombre(String nombre) {
+			this.nombre = nombre;
+		}
+
+		public double getTipoInteres() {
+			return tipoInteres;
+		}
+
+		public void setTipoInteres(double tipoInteres) {
+			this.tipoInteres = tipoInteres;
+		}
 	}
